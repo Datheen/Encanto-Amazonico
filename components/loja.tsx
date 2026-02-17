@@ -3,7 +3,6 @@
 import { TypingAnimation } from "./ui/typing-animation";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import Header from "./header";
 
 export default function Loja() {
   const animarRefs = useRef<(SVGSVGElement | null)[]>([]);
@@ -27,7 +26,7 @@ export default function Loja() {
       
       <div
         id="container"
-        className="max-w-480 h-auto px-50 mx-auto flex justify-around pt-15"
+        className="max-w-480 h-auto px-50 mx-auto flex justify-around pt-20"
       >
         
         <div className="pt-20" id="left">
@@ -101,7 +100,7 @@ export default function Loja() {
         </div>
       </div>
 
-      <div id="container-2" className="max-w-480 h-auto mb-10 px-40 mx-auto flex">
+      <div id="container-2" className="max-w-480 h-auto mb-10 px-40 -mt-20 mx-auto flex">
         <div
           className="grid grid-cols-6 w-full mt-45 text-green-800 font-bold"
           id="categorias"
