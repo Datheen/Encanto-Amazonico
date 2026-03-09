@@ -23,12 +23,10 @@ export default function Loja() {
   }, []);
   return (
     <div className="w-full overflow-hidden">
-      
       <div
         id="container"
         className="max-w-480 h-auto px-50 mx-auto flex justify-around pt-20"
       >
-        
         <div className="pt-20" id="left">
           <h1 className="text-6xl font-bold text-green-800">
             Compre a planta <br /> dos seus sonhos!
@@ -100,13 +98,22 @@ export default function Loja() {
         </div>
       </div>
 
-      <div id="container-2" className="max-w-480 h-auto mb-10 px-40 -mt-20 mx-auto flex">
+      <div
+        id="container-2"
+        className="max-w-480 h-auto mb-10 px-40 -mt-20 mx-auto flex"
+      >
         <div
           className="grid grid-cols-6 w-full mt-45 text-green-800 font-bold"
           id="categorias"
         >
           <div className="flex flex-col items-center gap-3 text-lg cursor-pointer">
             <img
+              onClick={() =>
+                document.getElementById("ORQUIDEAS")?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                })
+              }
               className="w-40 rounded-full hover:scale-110 transition-all duration-300 active:scale-90"
               src="/assets/img/categories/ball1.webp"
               alt=""
@@ -115,6 +122,12 @@ export default function Loja() {
           </div>
           <div className="flex flex-col items-center gap-3 text-lg cursor-pointer">
             <img
+              onClick={() =>
+                document.getElementById("SAMAMBAIAS")?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                })
+              }
               className="w-40 rounded-full hover:scale-110 transition-all duration-300 active:scale-90"
               src="/assets/img/categories/ball2.webp"
               alt=""
@@ -123,6 +136,12 @@ export default function Loja() {
           </div>
           <div className="flex flex-col items-center gap-3 text-lg cursor-pointer">
             <img
+              onClick={() =>
+                document.getElementById("BROMELIAS")?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                })
+              }
               className="w-40 rounded-full hover:scale-110 transition-all duration-300 active:scale-90"
               src="/assets/img/categories/ball3.webp"
               alt=""
@@ -131,6 +150,12 @@ export default function Loja() {
           </div>
           <div className="flex flex-col items-center gap-3 text-lg cursor-pointer">
             <img
+              onClick={() =>
+                document.getElementById("SUCULENTAS")?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                })
+              }
               className="w-40 rounded-full hover:scale-110 transition-all duration-300 active:scale-90"
               src="/assets/img/categories/ball4.webp"
               alt=""
@@ -139,6 +164,12 @@ export default function Loja() {
           </div>
           <div className="flex flex-col items-center gap-3 text-lg cursor-pointer">
             <img
+              onClick={() =>
+                document.getElementById("BEGONIAS")?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                })
+              }
               className="w-40 rounded-full hover:scale-110 transition-all duration-300 active:scale-90"
               src="/assets/img/categories/ball5.webp"
               alt=""
@@ -147,6 +178,12 @@ export default function Loja() {
           </div>
           <div className="flex flex-col items-center gap-3 text-lg cursor-pointer">
             <img
+              onClick={() =>
+                document.getElementById("ALOCASIAS")?.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                })
+              }
               className="w-40 rounded-full hover:scale-110 transition-all duration-300 active:scale-90"
               src="/assets/img/categories/ball6.webp"
               alt=""

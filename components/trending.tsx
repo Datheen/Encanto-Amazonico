@@ -1,4 +1,9 @@
+"use client"
+
+import { useRouter } from "next/navigation";
+
 export default function Trending() {
+  const router = useRouter();
   return (
     <div
       id="container"
@@ -15,10 +20,10 @@ export default function Trending() {
           <img
             className="px-5 h-full w-full object-cover pt-3 pb-20"
             src="assets/img/trending/elatior.webp"
-            alt="Planta Polly"
+            alt="Planta Elatior Laranja"
           />
         </div>
-        <button className="bg-white rounded-full w-max px-20 text-2xl py-3 mt-3 text-green-900 font-bold hover:bg-green-500 hover:text-white cursor-pointer active:scale-90 transition-all">
+        <button onClick={() => router.push(`produtos/31`)} className="bg-white rounded-full w-max px-20 text-2xl py-3 mt-3 text-green-900 font-bold hover:bg-green-500 hover:text-white cursor-pointer active:scale-90 transition-all">
           Comprar
         </button>
       </div>
@@ -34,7 +39,7 @@ export default function Trending() {
             alt="Planta Polly"
           />
         </div>
-        <button className="bg-white rounded-full w-max px-20 text-2xl py-3 mt-3 text-green-900 font-bold hover:bg-green-500 hover:text-white cursor-pointer active:scale-90 transition-all">
+       <button onClick={() => router.push(`produtos/5`)} className="bg-white rounded-full w-max px-20 text-2xl py-3 mt-3 text-green-900 font-bold hover:bg-green-500 hover:text-white cursor-pointer active:scale-90 transition-all">
           Comprar
         </button>
       </div>
@@ -47,10 +52,10 @@ export default function Trending() {
           <img
             className="px-5 h-full w-full object-cover pt-3 pb-20"
             src="assets/img/trending/blackvelvet.webp"
-            alt="Planta Polly"
+            alt="Planta Black Velvet"
           />
         </div>
-        <button className="bg-white rounded-full w-max px-20 text-2xl py-3 mt-3 text-green-900 font-bold hover:bg-green-500 hover:text-white cursor-pointer active:scale-90 transition-all">
+        <button onClick={() => router.push(`produtos/2`)} className="bg-white rounded-full w-max px-20 text-2xl py-3 mt-3 text-green-900 font-bold hover:bg-green-500 hover:text-white cursor-pointer active:scale-90 transition-all">
           Comprar
         </button>
      </div>

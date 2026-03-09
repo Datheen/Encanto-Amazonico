@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header>
+    <header className="hidden md:block">
       <div id="container" className="flex items-center justify-between w-full mt-8">
         <div>
           <img

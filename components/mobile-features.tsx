@@ -1,32 +1,29 @@
-import { NumberTicker } from "@/components/ui/number-ticker";
+import { NumberTicker } from "./ui/number-ticker";
 
-export default function Features() {
-  return (
-    <section id="features" className="w-full bg-green-800 relative -mt-55 z-2 overflow-hidden">
-      <div
-        id="container"
-        className="h-max max-w-480 px-50 mx-auto flex items-center justify-around"
-      >
-        <div id="left" className="py-60 relative w-1/2">
-          <div className="text-white/90 w-max p-8 bg-green-950/90 flex flex-col justify-center items-center top-34 -left-10 text-center gap-1 rounded-lg absolute">
-            <div className="font-bold text-6xl">
-              <NumberTicker value={200} />+
-            </div>
-            <p>Mais de 200 espécies</p>
-          </div>
+export default function MobileFeatures(){
+    return(
+        <div id="container" className="max-w-480 bg-green-800 -mt-8">
 
-          <img src="/assets/img/features.webp" alt="Quadro planta" />
-
-          <div className="text-white/90 w-max p-8 bg-green-950/90 flex flex-col justify-center items-center text-center gap-1 rounded-lg absolute bottom-44 right-60">
-            <div className="font-bold text-6xl">
+            <div className="px-6 relative py-50 flex justify-center items-center h-full">
+                 
+                          <div className="text-white/90 w-max p-8 bg-green-950/90 flex flex-col justify-center items-center top-27 left-1 text-center gap-1 rounded-lg absolute">
+                            <div className="font-bold text-4xl">
+                              <NumberTicker value={200} />+
+                            </div>
+                            <p className="text-sm">Mais de 200 espécies</p>
+                          </div>
+                <img src="/assets/img/features.webp"/>
+                  <div className="text-white/90 w-max p-8 bg-green-950/90 flex flex-col justify-center items-center text-center gap-1 rounded-lg absolute bottom-24 right-1">
+            <div className="font-bold text-4xl">
               <NumberTicker value={100} />%
             </div>
-            <p>Clientes satisfeitos</p>
+            <p className="text-sm">Clientes satisfeitos</p>
           </div>
-        </div>
+            </div>
 
-        <div id="right" className="flex flex-col gap-2 text-white/90 w-1/2">
-          <div className="flex gap-3">
+            <div className="flex flex-col px-6 text-white/80 gap-3 -mt-6 pb-10">
+
+<div className="flex gap-3">
             <div className="h-6 w-2 bg-green-300"></div>
             <h2 className="text-green-300 text-xl">
               {" "}
@@ -70,8 +67,8 @@ export default function Features() {
               </p>
             </div>
           </div>
+
+            </div>
         </div>
-      </div>
-    </section>
-  );
+    )
 }

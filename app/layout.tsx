@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/header";
 import PageTransition from "@/components/page-transition";
 import Footer from "@/components/footer";
+import ProgressBar from "@/components/progress-bar";
 
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],
@@ -24,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={poppins.variable}>
+         <ProgressBar />
          <div id="header" className="absolute w-full z-100 top-0 flex justify-center">
                 <div className="w-full max-w-480 px-50">
                   <Header />

@@ -159,3 +159,22 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+#container-m {
+  position: relative;
+}
+
+#container-m::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/assets/img/hero/pattern.webp");
+  background-size: 120%;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  z-index: 0;
+  pointer-events: none;
+}
